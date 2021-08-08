@@ -4,6 +4,10 @@ body {
     font-family: 'Rubik', sans-serif;
 }
 
+main {
+    margin-top: 70px;
+}
+
 .ptb-40 {
     padding: 40px 0px;
 }
