@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+body {
+    font-family: 'Rubik', sans-serif;
+}
+
+.ptb-40 {
+    padding: 40px 0px;
+}
+
+.profile-image {
+    object-fit: contain; 
+    border-top-left-radius: 60px; 
+    border-bottom-right-radius: 60px;
+    width: 100%;
+    height: 100%;
+}
+
+.card {
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+    border: none;
+}
+
+.shadow-none {
+    box-shadow: none!important;
+}
+
+.card-transparent {
+    border-top: none;
+    border: none;
+    --bs-bg-opacity: 1;
+    background-color: transparent!important;
+}
+
+.bg-grey {
+    background-color: var(--bs-gray-100);
+}
+
+
+.row-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(312px, 1fr));
+    grid-column-gap: 10px;
+    grid-row-gap: 50px;
+}
+
+.border-1left {
+    border: 1px solid; 
+    border-left: 6px solid var(--bs-dark);
+}
+
+.skill-icon {
+    height: 80px;
+    object-fit: contain;
+    margin: 8px;
+}
+
+/*
+.badge {
+    margin: 0.25em 0;
+}
+
+*/
+
+
+.btn-sm2 {
+    padding: .16rem .32rem;
+    font-size: .875rem;
+    border-radius: .32rem;
+}
+
+.c-content {
+    padding: 8px;
+    border-radius: 0.5rem;
+    transition: background-color 0.4s ease-in-out;
+}
+
+.c-content * {
+    transition: background-color 0.4s ease-in-out;
+}
+
+.c-content:hover {
+    background-color: var(--bs-dark);
+    color: var(--bs-white);
+}
+
+.c-content:hover .progress-bar {
+    background-color: var(--bs-white)!important;
+}
+
+.c-content:hover .badge {
+    border: 1px solid var(--bs-white)!important;
+    color: var(--bs-white)!important;
+}
+
+.c-content:hover > .progress {
+    background-color: var(--bs-gray-dark);
+}
+
+.border-none {
+    border: none;
+}
+
+.progress-bar {
+    background-color: var(--bs-dark);
+}
+
+.border-1 {
+    border: 1px solid var(--bs-dark);
+}
