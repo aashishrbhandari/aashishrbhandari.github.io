@@ -9,13 +9,19 @@ const thisLoc = thisFilePath();
 
 // Get Navbar
 async function loadNavbar() {
-    document.querySelector(".navbar-component").innerHTML = await (await fetch(thisLoc + '/navbar.html')).text();
-    setActiveLink();
+    let navComponent = document.querySelector(".navbar-component")
+    if (navComponent) {
+        document.querySelector(".navbar-component").innerHTML = await (await fetch(thisLoc + '/navbar.html')).text();
+        setActiveLink();
+    }
 }
 
 // Get Footer
 async function loadFooter() {
-    document.querySelector(".footer-component").innerHTML = await (await fetch(thisLoc + '/footer.html')).text();
+    let fooComponent = document.querySelector(".footer-component")
+    if (fooComponent) {
+        document.querySelector(".footer-component").innerHTML = await (await fetch(thisLoc + '/footer.html')).text();
+    }
 }
 
 function setActiveLink() {
