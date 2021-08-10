@@ -122,6 +122,11 @@ main {
     color: var(--bs-white)!important;
 }
 
+
+.c-content:hover .badge * {
+    color: var(--bs-white)!important;
+}
+
 .c-content:hover > .progress {
     background-color: var(--bs-gray-dark);
 }
@@ -141,9 +146,21 @@ main {
 .border-2 {
     border: 1px solid var(--bs-dark);
 }
+
+.border-top3 {
+    border-top: 3px solid var(--bs-dark);
+}
+
+.border-left3 {
+    border-left: 3px solid var(--bs-dark);
+}
+
+
 .border-bottom2 {
     border-bottom: 2px solid var(--bs-dark);
 }
+
+
 
 .p-8 {
     padding: 8px;
@@ -379,3 +396,10 @@ main {
 }
 
 /******* ****/
+
+
+.btn-close {
+    border-radius: 50%;
+    background-color: #f1f1f1;
+    border: 1px solid #6e6868;
+}
