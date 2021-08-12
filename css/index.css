@@ -27,6 +27,10 @@ main {
     padding: 40px 0px;
 }
 
+.pl-20 {
+    padding-left: 20px!important;
+}
+
 .shadow-none {
     box-shadow: none!important;
 }
