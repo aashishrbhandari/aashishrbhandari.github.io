@@ -8,9 +8,7 @@ main {
     margin-top: 70px;
 }
 
-.ptb-40 {
-    padding: 40px 0px;
-}
+
 
 .profile-image {
     object-fit: contain; 
@@ -23,6 +21,10 @@ main {
 .card {
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
     border: none;
+}
+
+.ptb-40 {
+    padding: 40px 0px;
 }
 
 .shadow-none {
@@ -40,12 +42,15 @@ main {
     background-color: var(--bs-gray-100);
 }
 
-
 .row-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(312px, 1fr));
     grid-column-gap: 10px;
     grid-row-gap: 50px;
+}
+
+.border-none {
+    border: none;
 }
 
 .border-1left {
@@ -82,18 +87,34 @@ main {
     margin: 8px;
 }
 
-/*
-.badge {
-    margin: 0.25em 0;
-}
-
-*/
-
-
 .btn-sm2 {
     padding: .16rem .32rem;
     font-size: .875rem;
     border-radius: .32rem;
+}
+
+.border-1 {
+    border: 1px solid var(--bs-dark);
+}
+
+.border-2 {
+    border: 1px solid var(--bs-dark);
+}
+
+.border-top3 {
+    border-top: 3px solid var(--bs-dark);
+}
+
+.border-left3 {
+    border-left: 3px solid var(--bs-dark);
+}
+
+.border-bottom2 {
+    border-bottom: 2px solid var(--bs-dark);
+}
+
+.p-8 {
+    padding: 8px;
 }
 
 .c-content {
@@ -101,7 +122,6 @@ main {
     border-radius: 0.5rem;
     transition: background-color 0.4s ease-in-out;
     border: 3px solid var(--bs-dark);
-    
 }
 
 .c-content * {
@@ -122,7 +142,6 @@ main {
     color: var(--bs-white)!important;
 }
 
-
 .c-content:hover .badge * {
     color: var(--bs-white)!important;
 }
@@ -131,47 +150,17 @@ main {
     background-color: var(--bs-gray-dark);
 }
 
-.border-none {
-    border: none;
-}
-
 .progress-bar {
     background-color: var(--bs-dark);
 }
-
-.border-1 {
-    border: 1px solid var(--bs-dark);
-}
-
-.border-2 {
-    border: 1px solid var(--bs-dark);
-}
-
-.border-top3 {
-    border-top: 3px solid var(--bs-dark);
-}
-
-.border-left3 {
-    border-left: 3px solid var(--bs-dark);
-}
-
-
-.border-bottom2 {
-    border-bottom: 2px solid var(--bs-dark);
-}
-
-
-
-.p-8 {
-    padding: 8px;
-}
-
 
 .certs-table-content .list-group-item.active {
     z-index: 2;
     color: #fff;
     background-color: var(--bs-dark);
     border-color: var(--bs-dark);
+    transition: margin-left 0.3s ease;
+    margin-left: 6px;
 }
 
 .certs-table-content .list-group-item {
@@ -184,19 +173,28 @@ main {
 }
 
 .certs-table-content-inner img {
-    max-height: 320px;
+    max-height: 360px;
     object-fit: contain;
 }
 
-
 @media (max-width: 540px) {
+    
     .certs-table-content-inner [id*="carousel"] {
         height: 100%!important;
     }
+
     .resume-title {
         height: 240px!important;
     }
+
+    .client-responses-content-inner blockquote {
+        font-size: 1rem;
+    }
+
+
 }
+
+/*** Resume ***/
 
 .resume-profile-img {
     object-fit: cover;
@@ -204,55 +202,6 @@ main {
     max-width: 260px;
     transform: scale(1.2) translate(-32px, 16px);
     overflow: hidden;
-}
-
-
-
-
-
-
-
-
-
-.client-logo-imgs {
-    display: flex;
-    align-items: flex-start;
-    justify-content: left;
-    flex-wrap: wrap;
-}
-
-.client-logo-imgs div {
-    border-radius: 10px;
-}
-
-.client-logo-imgs img {
-    width: 200px;
-    height: 70px;
-    object-fit: contain;
-    filter: grayscale(1);
-    transition: all 0.6s ease;
-}
-
-.client-logo-imgs img:hover {
-    filter: grayscale(0);
-    transform: scale(0.92);
-}
-
-.socio-links {
-    margin-bottom: 0.4rem;
-}
-
-@media (max-width: 540px) {
-    .socio-links li a {
-        padding: 0;
-        padding-right: 0.7rem;
-        padding-bottom: 1rem;
-        padding-top: 1rem;
-    }
- 
-    .client-responses-content-inner blockquote {
-        font-size: 1rem;
-    }
 }
 
 /***  Review Fields Data Padding ***/
@@ -270,7 +219,13 @@ main {
     background-color: #000000;
 }
 
+.certs-slide-show .carousel-inner, .certs-slide-show .carousel-item {
+    padding: 0px;
+}
 
+.certs-slide-show .carousel-indicators {
+    bottom: -50px;
+}
 
 /** Carousel Custom CSS **/
 .carousel-inner, .carousel-item {
@@ -402,4 +357,8 @@ main {
     border-radius: 50%;
     background-color: #f1f1f1;
     border: 1px solid #6e6868;
+}
+
+.modal-content {
+    border: none;
 }
