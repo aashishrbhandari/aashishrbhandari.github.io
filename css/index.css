@@ -165,7 +165,7 @@ main {
     background-color: var(--bs-dark);
     border-color: var(--bs-dark);
     transition: margin-left 0.3s ease;
-    margin-left: 6px;
+    margin-left: -10px;
 }
 
 .certs-table-content .list-group-item {

@@ -21,6 +21,7 @@ async function loadFooter() {
     let fooComponent = document.querySelector(".footer-component")
     if (fooComponent) {
         document.querySelector(".footer-component").innerHTML = await (await fetch(thisLoc + '/footer.html')).text();
+        quickSnap();
     }
 }
 
@@ -47,10 +48,27 @@ function setActiveLink() {
     }
 }
 
+function quickSnap() {
+    let quickSnapModal = document.getElementById('show-quick-snap')
+    quickSnapModal.addEventListener('show.bs.modal', function (event) {
+
+        let link = event.relatedTarget;
+        let urlLink = link.getAttribute('data-informer');
+        let orgTo = link.getAttribute('data-informer-id');
+
+        let modalBody = quickSnapModal.querySelector('.modal-body p');
+
+        modalBody.innerHTML = `
+        <h5> You are moving to <b>${orgTo}</b>, Click on Link below to Open the Web App </h5>
+            <a href="${urlLink}" target="_blank">${urlLink}</a>
+        `;
+
+    });
+}
+
 function main() {
     loadNavbar();
     loadFooter();
-
 }
 
 main();
