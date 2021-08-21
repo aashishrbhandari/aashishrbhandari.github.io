@@ -205,8 +205,10 @@ main {
 
 .resume-profile-img {
     object-fit: cover;
+    /*
     max-height: 280px;
     max-width: 260px;
+    */
     transform: scale(1.2) translate(-32px, 16px);
     overflow: hidden;
 }
@@ -339,6 +341,11 @@ main {
         width: 125px!important;
         height: 125px!important;
         border-radius: 50%;
+    }
+
+    .resume-header-desc {
+        padding-left: 20px;
+        min-height: 260px;
     }
 }
 
