@@ -330,6 +330,13 @@ main {
     /*flex-wrap: wrap;*/
 }
 
+.resume-header-content {
+    padding: 16px 0px 10px 16px;
+}
+.resume-header-content > div {
+    padding-bottom: 4px;
+}
+
 @media (max-width: 540px) {
     .profile-content {
         flex-direction: column;
