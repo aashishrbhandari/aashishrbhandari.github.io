@@ -267,6 +267,7 @@ main {
 
 
 @media (max-width: 540px) {
+    
     .socio-links li a {
         padding: 0;
         padding-right: 0.7rem;
@@ -330,6 +331,10 @@ main {
     /*flex-wrap: wrap;*/
 }
 
+.resume-header-img {
+    height: 215px;
+}
+
 .resume-header-content {
     padding: 16px 0px 10px 16px;
 }
@@ -338,11 +343,13 @@ main {
 }
 
 @media (max-width: 540px) {
+    
     .profile-content {
         flex-direction: column;
         align-items: center;         
         justify-content: center;
     }
+
     .profile-img img {
         margin-top: 40px;
         width: 125px!important;
@@ -350,9 +357,8 @@ main {
         border-radius: 50%;
     }
 
-    .resume-header-desc {
-        padding-left: 20px;
-        min-height: 260px;
+    .resume-header-img {
+        height: auto;
     }
 }
 
