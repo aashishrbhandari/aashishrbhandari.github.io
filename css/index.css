@@ -205,12 +205,9 @@ main {
 
 .resume-profile-img {
     object-fit: cover;
-    /*
-    max-height: 280px;
-    max-width: 260px;
-    */
+    width: 280px;
+    height: 100%;
     transform: scale(1.2) translate(-32px, 16px);
-    overflow: hidden;
 }
 
 .certs-slide-show .carousel-inner, .certs-slide-show .carousel-item {
@@ -349,17 +346,18 @@ main {
         align-items: center;         
         justify-content: center;
     }
-
-    .profile-img img {
-        margin-top: 40px;
-        width: 125px!important;
-        height: 125px!important;
-        border-radius: 50%;
-    }
-
+    
     .resume-header-img {
         height: auto;
     }
+
+    .resume-profile-img {
+        margin-top: 40px;
+        border-top-left-radius: 60px;
+        border-bottom-right-radius: 60px;
+        transform: none;
+    }
+
 }
 
 /******* ****/
