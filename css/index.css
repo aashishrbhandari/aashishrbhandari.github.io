@@ -357,6 +357,10 @@ main {
         border-bottom-right-radius: 60px;
         transform: none;
     }
+    
+    .intro-details {
+        text-align: center!important;
+    }
 
 }
 
