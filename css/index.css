@@ -204,8 +204,8 @@ main {
 /*** Resume ***/
 
 .intro-profile > img {
-    width: auto; 
-    height: 220px; 
+    width: 240px;
+    height: 225px;
     object-fit: contain; 
     border-radius: 50%; 
     margin: 16px; 
