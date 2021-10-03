@@ -210,6 +210,24 @@ main {
     transform: scale(1.2) translate(-32px, 16px);
 }
 
+.job-res-show {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding-bottom: 8px;
+    margin-left: -10px;
+    margin-bottom: 4px;
+    position: relative;
+    
+}
+
+.pinner {
+    position: absolute;
+    top: -8px;
+    left: 0;
+    border-radius: 50%;
+    width: 24px;
+}
+
 .certs-slide-show .carousel-inner, .certs-slide-show .carousel-item {
     padding: 0px;
 }
@@ -411,4 +429,19 @@ main {
 
 .row-gap-80 {
     row-gap: 80px;
+}
+
+@keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+	40% {transform: translateY(-12px);}
+	60% {transform: translateY(-7px);}
+	80% {transform: translateY(-2px);}
+}
+
+.btn-downloader {
+    border: 2px solid #fff;
+}
+
+.btn-downloader:hover > img {
+    animation: bounce 0.8s infinite;
 }
