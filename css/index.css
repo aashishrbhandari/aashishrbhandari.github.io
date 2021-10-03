@@ -203,11 +203,13 @@ main {
 
 /*** Resume ***/
 
-.resume-profile-img {
-    object-fit: cover;
-    width: 280px;
-    height: 100%;
-    transform: scale(1.2) translate(-32px, 16px);
+.intro-profile > img {
+    width: auto; 
+    height: 220px; 
+    object-fit: contain; 
+    border-radius: 50%; 
+    margin: 16px; 
+    border: 8px solid #f3f3f3;
 }
 
 .job-res-show {
@@ -380,6 +382,11 @@ main {
         text-align: center!important;
     }
 
+    .intro-profile > img {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
 }
 
 /******* ****/
@@ -445,3 +452,4 @@ main {
 .btn-downloader:hover > img {
     animation: bounce 0.8s infinite;
 }
+
