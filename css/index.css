@@ -205,6 +205,15 @@ main {
 
 .intro-profile > img {
     width: 240px;
+    /*height: 225px;*/
+    object-fit: contain; 
+    border-radius: 50%; 
+    margin: 16px; 
+    border: 8px solid #f3f3f3;
+}
+
+.intro-profile-img {
+    width: 100%;
     height: 225px;
     object-fit: contain; 
     border-radius: 50%; 
@@ -373,8 +382,8 @@ main {
 
     .resume-profile-img {
         margin-top: 40px;
-        border-top-left-radius: 60px;
-        border-bottom-right-radius: 60px;
+        border-top-left-radius: 32%;
+        border-bottom-right-radius: 32%;
         transform: none;
     }
     
