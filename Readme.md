@@ -7,7 +7,7 @@ Finally after few more iterations, i was able to built my Web Portfolio, I still
 
 Check it out @ [Ashish R Bhandari: Web Portfolio](https://aashishrbhandari.github.io)
 
-I took reference of [3rdWaveMedia Bootstrap4 Theme](https://themes.3rdwavemedia.com/instance/bs4/)
+I took reference from [3rdWaveMedia Bootstrap4 Theme](https://themes.3rdwavemedia.com/instance/bs4/)
 
 
 # Upcoming [To Do]
