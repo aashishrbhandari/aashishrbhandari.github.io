@@ -70,6 +70,16 @@ function quickSnap() {
 
 let certificates_details = [
     {
+        "org_id": "ACloudGuru",
+        "org_name": "ACloudGuru",
+        "org_desc": "ACloudGuru has Great Learning Material/Courses for Cloud & Best part is, it gives you Almost Full Access to AWS, AZure & GCP (as PlayGround) for hands-on Learning Experience",
+        "org_url": "https://learn.acloud.guru/",
+        "org_logo": "images/company/acloudguru-logo.png",
+        "org_certs": [
+            "images/certs/AWS/ACloudGuru/AWS_Certified_Security_Speciality.png",
+        ]
+    },
+    {
         "org_id": "aws",
         "org_name": "AWS Learning",
         "org_desc": "Exploring Different Sections of AWS Cloud & Security",
