@@ -231,8 +231,9 @@ function builtCertSection(certificates_details) {
 
     /** Need to Revisit */
     let certificationsSection = document.querySelector("CertSection");
-    certificationsSection.innerHTML = fullCertSection;
-
+    if (certificationsSection) {
+        certificationsSection.innerHTML = fullCertSection;
+    }
 
     function generateOneCertSection(oneCert, activer) {
 
